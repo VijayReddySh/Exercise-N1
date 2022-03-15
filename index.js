@@ -4,12 +4,12 @@ const path = require('path');
 const PORT = process.env.PORT || 5000;
 const mongoose = require('mongoose')
 
-mongoose.connect('mongodb+srv://cluster0.8pwjl.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://VijayWebSys:Vijay2856@cluster0.8pwjl.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
 const dataSchema = {
   ID: String,
   Name: String
 }
-const data = mongoose.model('VijayW', dataSchema);
+const data = mongoose.model("nam", dataSchema);
 express1()
   .use(express1.static(path.join(__dirname, 'public')))
   .set('views', path.join(__dirname, 'views'))
